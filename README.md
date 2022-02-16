@@ -1,9 +1,9 @@
-# SpringBoot
-- H2
-- Rest API
-- JPA
-- Hibernate
-- qlrm
+### SpringBoot Project
+- `H2`
+- `Rest API`
+- `JPA`
+- `Hibernate`
+- `qlrm`
 
 스프링부트 , H2 DB 환경으로 진행하였으며
 
