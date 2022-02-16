@@ -19,15 +19,21 @@ import com.example.demo.service.TasksService;
 @Service
 public class TasksServiceImpl implements TasksService{
 	
-	@Autowired
 	private UserRepository userRepository;
 	
-	@Autowired
 	private AccountRepository accountRepository;
 	
-	@Autowired
 	private AccountHstRepository accountHstRepository;
 	
+	@Autowired
+	public TasksServiceImpl(UserRepository userRepository, AccountRepository accountRepository,
+			AccountHstRepository accountHstRepository) {
+		super();
+		this.userRepository = userRepository;
+		this.accountRepository = accountRepository;
+		this.accountHstRepository = accountHstRepository;
+	}
+
 	/**
 	 * 사용자 추가
 	 */
